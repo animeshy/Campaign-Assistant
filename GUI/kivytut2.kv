@@ -1,0 +1,72 @@
+# Custom button
+<CustButton@Button>:
+    font_size: 32
+
+<ScreenOne>:
+    id: screen_one
+    display: entry
+    display2: entry2
+
+    GridLayout:
+        id: screen_1_grid
+        rows: 5
+
+        BoxLayout:
+
+            CustButton:
+                text: "Tab 1"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'screen_one'
+
+            CustButton:
+                text: "Tab 2"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+        BoxLayout:
+            TextInput:
+                id: entry
+                font_size: 32
+                multiline: False
+
+        BoxLayout:
+            TextInput:
+                id: entry2
+                font_size: 32
+                multiline: False
+
+        BoxLayout:
+            spacing: 10
+            CustButton:
+                text: "Predict"
+                on_press: screen_one.predict(entry.text)
+
+
+<ScreenTwo>:
+    id: screen_two
+
+    GridLayout:
+        id: screen_2_grid
+        rows: 5
+
+        BoxLayout:
+            CustButton:
+                text: "Tab 1"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.current = 'screen_one'
+
+            CustButton:
+                text: "Tab 2"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+        BoxLayout:
+            Label:
+                text: "This is the GRAPH area"
+
