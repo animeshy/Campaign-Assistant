@@ -13,7 +13,11 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
+
+# for people who do not have this kivy-gargen env
+# from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
+
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from kivy.uix.button import Label
 from kivy.uix.widget import Widget
 import matplotlib.pyplot as plt
@@ -105,13 +109,17 @@ class ScreenOne(Screen):
 
 class ScreenTwo(Screen):
     def basicgraph(self):
-        boxlayout2.add_widget(FigureCanvasKivyAgg(plt.gcf()))
+        # boxlayout2.add_widget(FigureCanvasKivyAgg(plt.gcf()))
+        # boxlayout2.add_widget(FigureCanvasTkAgg(plt.gcf()))
         pass
 
 class ScreenThree(Screen):
     def summary(self):
         pass
 
+class ScreenFour(Screen):
+    def help(self):
+        pass
 
 # The ScreenManager controls moving between screens
 screen_manager = ScreenManager()
@@ -138,6 +146,10 @@ boxlayout3 = BoxLayout()
 screen3.add_widget(boxlayout3)
 screen_manager.add_widget(screen3)
 
+screen4 = ScreenFour(name="screen_four")
+boxlayout4 = BoxLayout()
+screen4.add_widget(boxlayout4)
+screen_manager.add_widget(screen4)
 
 class CampaignGUIApp(App):
 

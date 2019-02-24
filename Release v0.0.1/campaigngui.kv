@@ -50,6 +50,13 @@
                     root.manager.transition.duration = 1
                     root.manager.current = 'screen_three'
 
+            Button:
+                text: "Help"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_four'
+
 
         BoxLayout:
             padding: 10
@@ -107,6 +114,13 @@
                     root.manager.transition.duration = 1
                     root.manager.current = 'screen_three'
 
+            Button:
+                text: "Help"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_four'
+
         BoxLayout:
             id: graphbox
             Label:
@@ -148,6 +162,66 @@
                     root.manager.transition.duration = 1
                     root.manager.current = 'screen_three'
 
+            Button:
+                text: "Help"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_four'
+
         BoxLayout:
             Label:
                 text: "This is the Summary area"
+
+<ScreenFour>
+    id: screen_four
+
+    BoxLayout:
+        orientation: "vertical"
+
+        BoxLayout:
+            size_hint: 1 ,0.09
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_three'
+
+            Button:
+                text: "Help"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_four'
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                size_hint: 0.9,0.1
+                text: "How to use Sentiment Test?"
+
+            Label:
+                size_hint: 0.9,0.1
+                text: "How to view the graph?"
+
+            Label:
+                size_hint: 0.9,0.1
+                text: "How to understand the word cloud?"
+
+            Label:
+                size_hint: 0.9, 0.1
+                text: "Have questions? Email to \n For technical Help:\n Yash Tibrewal: yashkush.tibrewal@gmail.com\n For understanding the software\nAnimesh Yadav: animeshy@gmail.com"
