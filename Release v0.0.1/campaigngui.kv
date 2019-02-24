@@ -1,0 +1,153 @@
+<WelcomeScreen>:
+    id: welcome_screen
+
+    BoxLayout:
+        canvas:
+            Rectangle:
+                source: 'logo.jpg'
+                size: self.size
+                pos: self.pos
+
+        BoxLayout:
+            Button:
+                text: "Click here to Proceed"
+                size_hint: 0.2 ,0.1
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_one'
+
+
+
+<ScreenOne>:
+    id: screen_one
+    display: entry
+    display2: entry2
+
+    BoxLayout:
+        orientation: "vertical"
+
+        BoxLayout:
+            size_hint: 1 ,0.2
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_three'
+
+
+        BoxLayout:
+            padding: 10
+            Label:
+                text: "Input"
+                size_hint: .2, .7
+            TextInput:
+                id: entry
+                font_size: 32
+                multiline: False
+
+        BoxLayout:
+            padding: 10
+            Label:
+                text: "Output"
+                size_hint: .2, .7
+            TextInput:
+                id: entry2
+                font_size: 32
+                multiline: False
+
+
+        Button:
+            size_hint: 1 ,0.2
+            text: "Predict"
+            on_press: screen_one.predict(entry.text)
+
+
+<ScreenTwo>:
+    id: screen_two
+
+    BoxLayout:
+        orientation: "vertical"
+
+        BoxLayout:
+            size_hint: 1 ,0.185
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_three'
+
+        BoxLayout:
+            id: graphbox
+            Label:
+                text: "This is the GRAPH area"
+
+        BoxLayout:
+            Button:
+                size_hint: 1, .2
+                text: "Plot"
+                on_press: screen_two.basicgraph()
+
+
+<ScreenThree>:
+    id: screen_three
+
+    BoxLayout:
+        orientation: "vertical"
+
+        BoxLayout:
+            size_hint: 1 ,0.09
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 1
+                    root.manager.current = 'screen_three'
+
+        BoxLayout:
+            Label:
+                text: "This is the Summary area"
