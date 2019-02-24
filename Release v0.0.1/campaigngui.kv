@@ -14,7 +14,7 @@
                 size_hint: 0.2 ,0.1
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0.1
                     root.manager.current = 'screen_one'
 
 
@@ -33,29 +33,41 @@
                 text: "Sentiment Test"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_one'
 
             Button:
                 text: "Graph"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_two'
 
             Button:
                 text: "Summary"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_three'
-
             Button:
-                text: "Help"
+                text: "Frequency Chart"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_four'
+
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
 
 
         BoxLayout:
@@ -97,29 +109,42 @@
                 text: "Sentiment Test"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_one'
 
             Button:
                 text: "Graph"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_two'
 
             Button:
                 text: "Summary"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_three'
 
             Button:
-                text: "Help"
+                text: "Frequency Chart"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_four'
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
 
         BoxLayout:
             id: graphbox
@@ -145,35 +170,48 @@
                 text: "Sentiment Test"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_one'
 
             Button:
                 text: "Graph"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_two'
 
             Button:
                 text: "Summary"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_three'
-
             Button:
-                text: "Help"
+                text: "Frequency Chart"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_four'
+
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
 
         BoxLayout:
             Label:
                 text: "This is the Summary area"
 
 <ScreenFour>
+    # FAQ screen
     id: screen_four
 
     BoxLayout:
@@ -185,29 +223,42 @@
                 text: "Sentiment Test"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_one'
 
             Button:
                 text: "Graph"
                 on_press:
                     root.manager.transition.direction = 'right'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_two'
 
             Button:
                 text: "Summary"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_three'
-
             Button:
-                text: "Help"
+                text: "Frequency Chart"
                 on_press:
                     root.manager.transition.direction = 'left'
-                    root.manager.transition.duration = 1
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
                     root.manager.current = 'screen_four'
+
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
+
         BoxLayout:
             orientation: "vertical"
             Label:
@@ -222,6 +273,104 @@
                 size_hint: 0.9,0.1
                 text: "How to understand the word cloud?"
 
+<ScreenFive>
+    # Support Screen
+    id: screen_five
+
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            size_hint: 1 ,0.09
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_three'
+            Button:
+                text: "Frequency Chart"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_four'
+
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
+        BoxLayout:
+            orientation: "vertical"
             Label:
                 size_hint: 0.9, 0.1
                 text: "Have questions? Email to \n For technical Help:\n Yash Tibrewal: yashkush.tibrewal@gmail.com\n For understanding the software\nAnimesh Yadav: animeshy@gmail.com"
+
+<ScreenSix>
+    id: frequency_screen
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            size_hint: 1 ,0.09
+            Button:
+                text: "Sentiment Test"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_one'
+
+            Button:
+                text: "Graph"
+                on_press:
+                    root.manager.transition.direction = 'right'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_two'
+
+            Button:
+                text: "Summary"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_three'
+            Button:
+                text: "Frequency Chart"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'frequency_screen'
+            Button:
+                text: "FAQs"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_four'
+
+            Button:
+                text: "Support"
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.transition.duration = 0
+                    root.manager.current = 'screen_five'
+        Label:
+            text: "test"
+

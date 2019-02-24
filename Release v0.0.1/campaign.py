@@ -121,6 +121,15 @@ class ScreenFour(Screen):
     def help(self):
         pass
 
+class ScreenFive(Screen):
+    def support(self):
+        pass
+
+class ScreenSix(Screen):
+    def showFrequency(self):
+        pass
+
+
 # The ScreenManager controls moving between screens
 screen_manager = ScreenManager()
 
@@ -151,8 +160,17 @@ boxlayout4 = BoxLayout()
 screen4.add_widget(boxlayout4)
 screen_manager.add_widget(screen4)
 
-class CampaignGUIApp(App):
+screen5 = ScreenFive(name="screen_five")
+boxlayout5 = BoxLayout()
+screen5.add_widget(boxlayout5)
+screen_manager.add_widget(screen5)
 
+frequencyScreen = ScreenSix(name="frequency_screen")
+boxlayout6 = BoxLayout()
+frequencyScreen.add_widget(boxlayout6)
+screen_manager.add_widget(frequencyScreen)
+
+class CampaignGUIApp(App):
     def build(self):
         return screen_manager
 
