@@ -263,15 +263,15 @@
             orientation: "vertical"
             Label:
                 size_hint: 0.9,0.1
-                text: "How to use Sentiment Test?"
+                text: "\nHow to use Sentiment Test?\n\n\t1.Write a keyword which you would like to classify\n\t2.Click on Predict button on the bottom\n\t3.-1 represents a overall negative sentiment and 1 represents an overall positive sentiment"
 
             Label:
                 size_hint: 0.9,0.1
-                text: "How to view the graph?"
+                text: "\nHow to view the graph?\n\n\tThe x axis represents the time line, the y axis represents the sentiment"
 
             Label:
                 size_hint: 0.9,0.1
-                text: "How to understand the word cloud?"
+                text: "\nHow to understand the word cloud?\n\n\tThe larger word signifies that it has been used more number of times and represents the present trend"
 
 <ScreenFive>
     # Support Screen
@@ -371,6 +371,5 @@
                     root.manager.transition.direction = 'left'
                     root.manager.transition.duration = 0
                     root.manager.current = 'screen_five'
-        Label:
-            text: "test"
-
+        Button:
+            text: "Show Frequency"

@@ -113,6 +113,7 @@ class ScreenTwo(Screen):
         # boxlayout2.add_widget(FigureCanvasTkAgg(plt.gcf()))
         pass
 
+
 class ScreenThree(Screen):
     def summary(self):
         pass
@@ -126,6 +127,27 @@ class ScreenFive(Screen):
         pass
 
 class ScreenSix(Screen):
+    def sortingTwoLists(self,listkey,listvalue):
+        keylen = len(listkey)
+        valuelen = len(listvalue)
+        for i in range(0,keylen-1):
+            for j in range(0,valuelen-i-1):
+                if listkey[j] > listkey[j+1]:
+                    listkey[j],listkey[j+1] = listkey[j+1],listkey[j]
+                    listvalue[j],listvalue[j+1] = listvalue[j+1],listvalue[j]
+        return listkey,listvalue
+
+    def freq(self):
+        data = """"""
+        data = ScreenOne().preprocessTweets(data)
+        words = data.split(" ")
+        unique_words = set(words)
+        no_of_words = len(unique_words)
+        word_freq = []*len(unique_words)
+        for i in range(0,no_of_words):
+            word_freq[i] = words.count(unique_words[i])
+        print(word_freq)
+
     def showFrequency(self):
         pass
 
@@ -138,36 +160,38 @@ screen_manager = ScreenManager()
 welcome1 = WelcomeScreen(name="welcome_screen")
 boxlayout = BoxLayout()
 welcome1.add_widget(boxlayout)
-screen_manager.add_widget(welcome1)
 
 screen1 = ScreenOne(name="screen_one")
 boxlayout = BoxLayout()
 screen1.add_widget(boxlayout)
-screen_manager.add_widget(screen1)
 
 screen2 = ScreenTwo(name="screen_two")
 boxlayout2 = BoxLayout()
 screen2.add_widget(boxlayout2)
-screen_manager.add_widget(screen2)
 
 screen3 = ScreenThree(name="screen_three")
 boxlayout3 = BoxLayout()
 screen3.add_widget(boxlayout3)
-screen_manager.add_widget(screen3)
 
 screen4 = ScreenFour(name="screen_four")
 boxlayout4 = BoxLayout()
 screen4.add_widget(boxlayout4)
-screen_manager.add_widget(screen4)
 
 screen5 = ScreenFive(name="screen_five")
 boxlayout5 = BoxLayout()
 screen5.add_widget(boxlayout5)
-screen_manager.add_widget(screen5)
 
 frequencyScreen = ScreenSix(name="frequency_screen")
 boxlayout6 = BoxLayout()
 frequencyScreen.add_widget(boxlayout6)
+
+
+screen_manager.add_widget(welcome1)
+screen_manager.add_widget(screen1)
+screen_manager.add_widget(screen2)
+screen_manager.add_widget(screen3)
+screen_manager.add_widget(screen4)
+screen_manager.add_widget(screen5)
 screen_manager.add_widget(frequencyScreen)
 
 class CampaignGUIApp(App):
