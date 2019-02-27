@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c04d988-efb9-40c4-bed5-97b1b572471e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Scripts/wordcloud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FYP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FYP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release v0.0.1/campaign.py" beforeDir="false" afterPath="$PROJECT_DIR$/Release v0.0.1/campaign.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release v0.0.1/campaigngui.kv" beforeDir="false" afterPath="$PROJECT_DIR$/Release v0.0.1/campaigngui.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/TwitterAPIFetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TwitterAPIFetch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/9-JAN-15-Jan.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/9-JAN-15-Jan.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaign.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="131">
+              <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -31,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaigngui.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-608">
-              <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
+            <state relative-caret-position="4573">
+              <caret line="269" column="15" selection-start-line="269" selection-start-column="15" selection-end-line="269" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -91,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="290" />
     <option name="y" value="55" />
     <option name="width" value="1400" />
@@ -307,7 +301,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42917848" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42917848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaigngui.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-608">
-          <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Labelling tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -528,8 +515,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaign.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="131">
+          <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaigngui.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4573">
+          <caret line="269" column="15" selection-start-line="269" selection-start-column="15" selection-end-line="269" selection-end-column="15" />
         </state>
       </provider>
     </entry>
