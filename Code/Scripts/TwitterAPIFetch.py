@@ -56,10 +56,10 @@ class FetchTweets:
 if __name__ == "__main__":
 
     fetch_tweets_obj = FetchTweets()
-    fetch_tweets_obj.max_id = 1100825442473234432  # random tweet id from Feb 27 2019
+    fetch_tweets_obj.max_id = 1100842985925894144
     fetch_tweets_obj.count = 100
-    fetch_tweets_obj.query = 'Narendra Modi'
-    fetch_tweets_obj.path_to_save = "D :\\Users\\yashk\\Campaign-Assistant\\Data\\Full Text Tweets\\query narendra modi"
+    fetch_tweets_obj.query = 'pulwama, bjp'
+    fetch_tweets_obj.path_to_save = "D:\\Users\\yashk\\Campaign-Assistant\\Data\\Full Text Tweets\\query pulwama, bjp"
     while True:
         fetch_tweets_obj.initiate_data_collection()
         print('timer triggered!!')

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c04d988-efb9-40c4-bed5-97b1b572471e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/Scripts/JSONTestWrite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/SavingJson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/Tweet_Completion_Tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/Twitter Stuff.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/kivyPractice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/kivypractice.kv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/twitterFetch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Scripts/wordcloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Scripts/wordcloud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/unique/modi/unique_1-JAN-to-8-JAN.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/unique/modi/unique_9-JAN-15-Jan.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/unique/rahul/unique_9-Jan-15-Jan.xls" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,6 +42,7 @@
       <find>id_str</find>
       <find>{'created_at': 'Wed Feb 27</find>
       <find>full_text</find>
+      <find>favou</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,16 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/excel_write_test.py" />
-        <option value="$PROJECT_DIR$/excel_read_test" />
-        <option value="$PROJECT_DIR$/unique_tweets.py" />
-        <option value="$PROJECT_DIR$/Labelling tool.py" />
-        <option value="$PROJECT_DIR$/Scripts/Labelling tool.py" />
-        <option value="$PROJECT_DIR$/Scripts/TweepyFetch.py" />
-        <option value="$PROJECT_DIR$/Scripts/TweetFetch.py" />
-        <option value="$PROJECT_DIR$/Scripts/twitterFetch.py" />
-        <option value="$PROJECT_DIR$/Scripts/Tweet_Completion_Tool.py" />
-        <option value="$PROJECT_DIR$/Scripts/SavingJson.py" />
         <option value="$PROJECT_DIR$/Scripts/ReadingJsonTest.py" />
         <option value="$PROJECT_DIR$/Scripts/grpah_plot_test" />
         <option value="$PROJECT_DIR$/Scripts/simpleKivy.kv" />
@@ -111,12 +83,25 @@
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100779124921114624.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100774812799033345.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100772732936118272.json" />
-        <option value="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100771039523602432.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100771082909376514.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100770739668475904.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100769598960332800.json" />
         <option value="$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100732779682246656.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100842974085304321.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100831159376736256.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100782990848741378.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/test/1100732713491939328.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/test/1100727703450370048.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/test/1100842063581474816.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/test2/1100676213188845569.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/test2/1098223404392632320.json" />
+        <option value="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py" />
+        <option value="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch2.py" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/query pulwama, congress/1100842625706397697.json" />
+        <option value="$PROJECT_DIR$/Data/Full Text Tweets/query pulwama, congress/1100811911959011328.json" />
+        <option value="$PROJECT_DIR$/Data/extendedTweetCompletionData.json" />
+        <option value="$PROJECT_DIR$/Data/twitterTestData.json" />
       </list>
     </option>
   </component>
@@ -132,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,6 +150,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -194,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TwitterAPIFetch (1)">
+  <component name="RunManager" selected="Python.TwitterAPIFetch2">
     <configuration name="TwitterAPIFetch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FYP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,6 +193,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TwitterAPIFetch2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FYP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,34 +306,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="workingwithurl" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FYP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Scripts/workingwithurl.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TwitterAPIFetch2" />
         <item itemvalue="Python.TwitterAPIFetch (1)" />
         <item itemvalue="Python.twitterFetch" />
         <item itemvalue="Python.jsontestwrite" />
         <item itemvalue="Python.fetchtest" />
-        <item itemvalue="Python.workingwithurl" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +332,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22009254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22009254" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,88 +352,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22034791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22009254" />
       <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32919955" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57451403" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42917848" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32792208" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Scripts/TwitterAPIFetch.py" />
-    <entry file="file://$PROJECT_DIR$/Scripts/Labelling tool.py" />
-    <entry file="file://$PROJECT_DIR$/Scripts/wordcloud.py" />
-    <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaign.py" />
-    <entry file="file://$PROJECT_DIR$/Release v0.0.1/campaigngui.kv" />
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/duplicacy check.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/duplicacy_check_v2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/campaign_assistant/Lib/site-packages/wordcloud/wordcloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/campaign_assistant/Lib/site-packages/wordcloud/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/grpah_plot_test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/excel_write_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/excel_read_test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/wordcloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/workingwithurl.py" />
-    <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/campaign_assistant/Lib/site-packages/TwitterAPI/TwitterAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="162" column="21" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/campaign_assistant/Lib/site-packages/twitter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/campaign_assistant/Lib/site-packages/twitter/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1362">
@@ -483,13 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Scripts/JSONTestWrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -558,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100842985925894144.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100774812799033345.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -614,17 +524,134 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100842974085304321.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100831159376736256.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query rahul gandhi/1100782990848741378.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test/1100732713491939328.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test/1100727703450370048.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test/1100842063581474816.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test2/1100676213188845569.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="101" column="305" selection-start-line="101" selection-start-column="282" selection-end-line="101" selection-end-column="305" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test2/1098289343393759232.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100732779682246656.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/test2/1098223404392632320.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="146" column="28" lean-forward="true" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query narendra modi/1100842985925894144.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query pulwama, congress/1100842625706397697.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1462">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Full Text Tweets/query pulwama, congress/1100811911959011328.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/extendedTweetCompletionData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret column="1259" selection-start-column="1259" selection-end-column="1259" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/twitterTestData">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/twitterTestData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Scripts/JSONTestWrite.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Scripts/duplicacy_check_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/Scripts/TwitterAPIFetch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="536">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
