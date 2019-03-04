@@ -14,7 +14,6 @@ class FetchTweets:
         self.tweets = None  # tweets will be TwitterResponse type object.
         self.path_to_save = None
         self.total_tweets = 0
-        # self.tweets_fetched = 0
 
     def api_init__(self):
         self.api = TwitterAPI(consumer_key="ZkueGAecI0y6rrbwbPrN3KcRg",
@@ -61,8 +60,8 @@ class FetchTweets:
 if __name__ == "__main__":
 
     fetch_tweets_obj = FetchTweets()
-    fetch_tweets_obj.max_id = 1102266327450951685
-    fetch_tweets_obj.since_id = 1101895485252603906
+    fetch_tweets_obj.max_id = 1102459152444477440
+    fetch_tweets_obj.since_id = 1102267136829939712
     fetch_tweets_obj.count = 100
     fetch_tweets_obj.query = 'narendra modi'
     fetch_tweets_obj.path_to_save = "D:\\Users\\yashk\\Campaign-Assistant\\Data\\Full Text Tweets\\query narendra modi"

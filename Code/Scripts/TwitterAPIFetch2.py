@@ -27,7 +27,9 @@ class FetchTweets:
     def call_api(self):
         self.tweets = self.api.request('search/tweets',
                                        {'q': self.query, 'count': self.count, 'tweet_mode': 'extended', 'lang': 'en',
-                                        'since_id': self.since_id,'max_id': self.max_id})
+                                        'since_id': self.since_id
+                                           # ,'max_id': self.max_id
+                                        })
         # since_id = tweets.json()['statuses'][0]['id']
 
     @staticmethod
@@ -61,8 +63,8 @@ class FetchTweets:
 if __name__ == "__main__":
 
     fetch_tweets_obj = FetchTweets()
-    fetch_tweets_obj.max_id = 1102253042869522432
-    fetch_tweets_obj.since_id = 1101655108520013829
+    fetch_tweets_obj.max_id = 1102458579469053952
+    fetch_tweets_obj.since_id = 1102256553309147136
     fetch_tweets_obj.count = 100
     fetch_tweets_obj.query = 'rahul gandhi'
     fetch_tweets_obj.path_to_save = "D:\\Users\\yashk\\Campaign-Assistant\\Data\\Full Text Tweets\\query rahul gandhi"
