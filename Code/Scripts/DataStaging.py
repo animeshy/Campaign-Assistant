@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import re
 
 # objective for the module is to:
 # 1.read the tweets stored in json files
@@ -9,6 +10,7 @@ import os
 # 4.store it in an excel file.
 
 path_to_tweets = "D:\\Users\\yashk\\Campaign-Assistant\\Data\\Full Text Tweets\\query narendra modi"
+path_to_save = "D:\\Users\\yashk\\Campaign-Assistant\\Data\\Unique Full Text Tweets\\query narendra modi.csv"
 
 
 class StageData:
@@ -33,22 +35,19 @@ class StageData:
         :return: a list of tweets, where each tweet has tweet_id, time, text, likes
         """
         tweets = []
-        for input_file_path in self.list_of_files:
-            with open(input_file_path) as f:
+        no_of_tweets = len(self.list_of_files)
+        for i in range(0,2000):
+            with open(self.list_of_files[i]) as f:
                 file = json.load(f)
+                print(i)
             tweet = {'id': file['id']}
-            # if it is not a retweet then we can directly get the details
-            if tweet['retweeted']:
-                tweet['created_time'] = file['created_at']
-                tweet['text'] = file['full_text']
-                tweet['likes'] = file['favorite_count']
-            # else we need to dig down to hte original tweet to get the details.
-            else:
+            try:
                 tweet['created_time'] = file['retweeted_status']['created_at']
                 tweet['text'] = file['retweeted_status']['full_text']
-                tweet['likes'] = file['retweeted_status']['favorite_count']
+            except:
+                tweet['created_time'] = file['created_at']
+                tweet['text'] = file['full_text']
             tweets.append(tweet)
-            tweet = None
         return tweets
 
     def write_to_file(self, tweets, output_file_path) -> None:
@@ -57,25 +56,77 @@ class StageData:
         :param tweets: contains the list of tweets, where tweet is a dictionary
         :return: None
         """
-        pass
+        with open(output_file_path, mode='w',newline='') as csv_file:
+            tweet = ['id','created_time','text']
+            writer = csv.DictWriter(csv_file, fieldnames=tweet)
 
-    def get_unique_tweets(self, tweets) -> list:
+            writer.writeheader()
+            for tweet in tweets:
+                try:
+                    writer.writerow(tweet)
+                except:
+                    pass
+
+    @staticmethod
+    def get_unique_tweets(list_of_tweets) -> list:
         """
         Function to remove the redundant tweets in the list
-        :param tweets: takes in list of tweets
+        :param list_of_tweets: takes in list of tweets
         :return: returns the unique list of tweets
         """
-        no_of_tweets = len(tweets)
-        list_of_full_text = []
-        for tweet in tweets:
-            list_of_full_text.append(tweet['text'])
+        no_of_tweets = len(list_of_tweets)
+        unique_list_of_full_text = []
+        # for tweet in tweets:
+        #     unique_list_of_full_text.append(tweet['text'])
+        # unique_list_of_full_text = set(unique_list_of_full_text)
+        # unique_list_of_full_text = list(unique_list_of_full_text)
+        # print("unique length : ",len(unique_list_of_full_text))
+        unique_list_of_tweets = []
         for iterator in range(0, no_of_tweets):
-            if tweets[iterator]['text'] in list_of_full_text:
-                tweets.pop(iterator)
-                iterator -= 1
-                no_of_tweets -= 1
+            if list_of_tweets[iterator]['text'] in unique_list_of_full_text:
+                # tweets.pop(iterator)
+                # iterator -= 1
+                # no_of_tweets -= 1
+                continue
             else:
-                list_of_full_text.append(tweets[iterator]['text'])
+                unique_list_of_full_text.append(list_of_tweets[iterator]['text'])
+                unique_list_of_tweets.append(list_of_tweets[iterator])
+        for text in unique_list_of_full_text:
+            print(text)
+        return unique_list_of_tweets
 
 
-objectStageData = StageData()
+# objectStageData = StageData()
+# objectStageData.get_tweet_file_names(path_to_tweets)
+# tweets = objectStageData.read_tweets()
+# unique_tweets = objectStageData.get_unique_tweets(tweets)
+# l = len(unique_tweets)
+# print(len(unique_tweets))
+# for i in range(0, l):
+    # print(tweets[i])
+# objectStageData.write_to_file(tweets,path_to_save)
+full_text = []
+with open("D:\\Users\\yashk\\Campaign-Assistant\\Data\\Unique Full Text Tweets\\query rahul gandhi.csv",'r') as file:
+    reader = csv.reader(file)
+    for tweet in reader:
+        full_text.append(tuple([tweet[1],tweet[2]]))
+    full_text = set(full_text)
+    print(len(full_text))
+    full_text = list(full_text)
+    number = len(full_text)
+    print(full_text[0])
+    for i in range(0,number):
+        full_text[i] = list(full_text[i])
+        full_text[i].append(full_text[i][1])
+        full_text[i][1] = full_text[i][0]
+        full_text[i][0] = str(1000000+i)
+    print(full_text[0])
+with open("D:\\Users\\yashk\\Campaign-Assistant\\Data\\Unique Full Text Tweets\\query rahul gandhi.csv",'w',newline='') as file:
+    tweet = {}
+    writer = csv.DictWriter(file, fieldnames=['id','created_time','text'])
+    for text in full_text:
+        tweet['id'] = text[0]
+        tweet['created_time'] = text[1]
+        tweet['text'] = text[2]
+        writer.writerow(tweet)
+    print(tweet)
